@@ -74,7 +74,8 @@ a:hover:after {
 @media (max-width: 575px){
   .navbar-brand{
   border-right: 0px solid white;
-}
+  }
+  
 }
 .navbar-toggler-icon i{
 
@@ -90,6 +91,18 @@ a:hover:after {
 .collapse li:hover a{
   color:var(--design1);
 }
+
+@media (min-width:575px){
+  .collapse{
+  position: relative;
+}
+
+.collapse button{
+  position: absolute;
+  right: 0;
+}
+}
+
 /*NAVBAR*/
 
 .container-fluid{
@@ -99,7 +112,11 @@ a:hover:after {
 .banner{
   text-align: center;
   color: white;
-  font-size: 5rem;
+  font-size: 3rem;
+}
+
+.banner-text{
+  
 }
 
 .contents{
@@ -109,7 +126,7 @@ a:hover:after {
 }
 .contents .heading{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
     width: 100%;
 }
@@ -138,7 +155,7 @@ img{
 }
 
 .iframe-title{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
     text-align: center;
     border-bottom: 2px solid white;
@@ -167,7 +184,7 @@ iframe{
 }
 
 .detail-card .text{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
 }
 
@@ -178,6 +195,10 @@ iframe{
 }
 
 /*MODAL BOX*/
+
+.modal-footer{
+  height:50px;
+}
 
 .modal-body ,.modal-header, .modal-footer{
   background-color: black;
