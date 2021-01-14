@@ -272,7 +272,7 @@ button:focus {
 .sectionFour h4 {
   color: var(--design1);
   font-weight: 700;
-  background:var(--bgtheme);
+  /* background:var(--bgtheme); */
   padding:2px;
   border:3px solid var(--bgletter);
   border-radius:15px;
