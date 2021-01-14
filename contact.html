@@ -10,6 +10,16 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--FOOTER-->
+    <link rel="stylesheet" href="wow/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/76c970a45b.js" crossorigin="anonymous"></script>
+    <link rel="icon" sizes="32x32" href="media/favicons/favicon-32x32.png">
+    <link rel="stylesheet" href="./footer/footer2.css">
+    <link rel="stylesheet" href="./footer/footer.css">
+    <!--FOOTER-->
     <!--AOS-->
     <!--Scroll Reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -27,7 +37,7 @@
         }
     </style>
 
-    <body>
+    <body >
     <div class="navContainer" style="display: block;">
 
         <nav class="navbar navbar-expand-sm navigationMenu">
@@ -40,11 +50,11 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./homepage.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./home.html">Home<span class="sr-only"></span></a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="./projects.html">Projects</a><span class="sr-only"></span></a>
+                        <a class="nav-link" href="./project.html">Projects</a><span class="sr-only"></span></a>
                     </li>
 
 
@@ -62,7 +72,7 @@
                     </li>
 
                     <li class="nav-item active">
-                        <button type="button" class="btn btn-Dark modal-button" data-toggle="modal" data-target="#myModal"> <span>Message us</span> </button>
+                        <button type="button" class="btn btn-Dark modal-button" data-toggle="modal" data-target="#myModal"> <span><i class='bx bx-message-square-error' style='color:#ce4a7e'  ></i></span> </button>
                         <!-- Modal -->
                         <div class="modal fade" id="myModal" role="dialog">
                         <div class="modal-dialog modal-lg">
@@ -101,22 +111,22 @@
         </nav>
     </div>
 
-    <div class='banner col-12'>
-        <div class="banner-text">
-            CONTACT US
+    <div class='banner col-12' id='your-element-selector'>
+        <div class="banner-text pt-5">
+            <span class="align-middle">CONTACT US</span>
         </div>
     </div>
 
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5" style="width:80vw">
         <div class="row contents mt-5"  style="background-color: #ce4a7eff;">
-            <div class="heading col-12 border-bottom" style="background-color: #ce4a7eff;">How to reach</div>
+            <div class="heading col-12 border-bottom mt-2" style="background-color: #ce4a7eff;">How to reach</div>
             <div class="col-lg-3 col-sm-12 col-xs-12 d-flex justify-content-center">
                 <div class="card mt-5 mb-5 ml-5"  style="width: 18rem;background: #1C1C1BFF;">
                     <img class="card-img-top" src="./assets/img/contact/location.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Location</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary col-12">Google Maps</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +137,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Bus Station</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary col-12">Google Maps</a>
                     </div>
                 </div>
             </div>
@@ -138,26 +148,25 @@
                     <div class="card-body">
                         <h5 class="card-title">Airport</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary col-12">Google Maps</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-12 col-xs-12 pl-3 mb-5  d-flex justify-content-center">
                 <div class="card mt-5"  style="width: 18rem;background: #1C1C1BFF;">
-                    <img class="card-img-top" src="./assets/img/contact/train.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="./assets/img/contact/train.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Train Station</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary col-12" style="width: 100%;">Google Maps</a>
                     </div>
                 </div>
             </div>
 
             </div>
-        <div class="animation col-12 mt-5" id="your-element-selector">
-        </div>
-        <div class="iframe-title col-12" mt-5>
+        
+        <div class="iframe-title col-12 mt-5">
             We are here
         </div>
         <div class="g-map col-12 mt-1">
@@ -172,28 +181,28 @@
                         <div class="col-lg-3 col-sm-12 col-xs-12 mt-5">
                             <div class="detail-card bg-light">
                                 <div class="icons"><i class='bx bx-current-location' style='color:#ce4a7e'  ></i></div>
-                                <div class="text"> <b>Location</b> </div>
+                                <div class="text" style="font-size: 1.5rem;"> <b> <center>Location</center> </b> <span style="font-size: 1rem;"></span> </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-12 col-xs-12 mt-5 bg-light">
+                        <div class="col-lg-3 col-sm-12 col-xs-12 mt-5 ">
                             <div class="detail-card bg-light">
                                 <div class="icons"><i class='bx bxs-phone' style='color:#ce4a7e'  ></i></div>
-                                <div class="text">Call us <br> 123456789 </div>
+                                <div class="text" style="font-size: 1.5rem;"> <b> <center>Call us</center></b>  <span style="font-size: 1rem;"><center><a href="tel:'123456789'" >1234566789</a></center></span> </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-12 col-xs-12 mt-5 bg-light">
+                        <div class="col-lg-3 col-sm-12 col-xs-12 mt-5 ">
                             <div class="detail-card bg-light">
                                 <div class="icons"><i class='bx bx-mail-send' style='color:#ce4a7e' ></i></div>
-                                <div class="text">Mail us <br> loremipsum@email.com  </div>
+                                <div class="text" style="font-size: 1.5rem;"> <center><b>Mail us</b></center><span style="font-size: 1rem;"><center><a href="">loremipsum@email.com</a></center></span> </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-sm-12 col-xs-12 mt-5 bg-light">
+                        <div class="col-lg-3 col-sm-12 col-xs-12 mt-5">
                             <div class="detail-card bg-light mb-5 mr-5">
                                 <div class="icons"><i class='bx bxl-google' style='color:#ce4a7e'  ></i></div>
-                                <div class="text">Visit us <br> <a href="">site link</a> 
+                                <div class="text" style="font-size: 1.5rem;"> <center><b>Our website</b></center><a href="" style="font-size: 1rem;">link of the webiste</a> 
                                 </div>
                             </div>
                         </div>
@@ -202,9 +211,51 @@
                 </div>
         </div>
 
-        <footer>
-            INSERT
+        <section id="footer" class="shadow-3">
+        <footer class="container text-center text-lg-left">
+            <div class="row">
+                <div class="wow slideInLeft col-lg-7" data-wow-offset="200">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4 class="h2 font-weight-light">EPOCH ZERO<sup><small>&trade;</small></sup></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-lg-6 pl-0 pl-lg-5 border-left mt-5 mt-lg-0" id="contact">
+                            <h5>Contact</h5>
+                            <address>
+                                2193 Hood Avenue <br>
+                                Calfornia <br>
+                                ZIP Code 92064 <br>
+                                Telephone: 858-668-1235
+                            </address>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="" style="text-align: center; font-size: 1rem; font-weight: bold;">Find Us On</div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-lg-10">
+                            <div class="wow slideInUp rounded-social-buttons">
+                                <a class="social-button facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-button twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a class="social-button linkedin" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a class="social-button instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="social-button github" href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                <a class="social-button phone" href="tel:1234" target="_blank"><i class="fas fa-phone"></i></a>
+                                <a class="social-button envelope" href="mailto:loremepsom@email.com" target="_blank"><i class="far fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow slideInRight col-lg-5" data-wow-offset="200">
+                    <div id="map"></div>
+                </div>
+            </div>
         </footer>
+        <div class="wow slideInUp text-white text-center mt-5 py-3" id="footer-bottom">
+            <h6>Copyright 2020 <br>All Rights Reserved </h6>
+        </div>
+    </section>
         
         
 
@@ -233,7 +284,8 @@
             birdSize: 2.10,
             wingSpan: 25.00,
             speedLimit: 8.00,
-            separation: 63.00
+            separation: 63.00,
+            quantity: 3.00
   })
     </script>
 
@@ -244,6 +296,7 @@
         ScrollReveal().reveal('.card-body', { delay: 1000 });
         ScrollReveal().reveal('.g-map', {delay:500});
         
+        ScrollReveal().reveal('.detail-card');
     </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -267,5 +320,17 @@
         $('#myInput').trigger('focus')
         })
     </script>
+
+    <!--FOOTER-->
+    <script src="./footer/wow/wow.min.js"></script>
+     <script src="./footer/wow/wow-activate.js"></script>
+     
+     <!-- Google Maps -->
+     <script src="initMap.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeRsHl2ya2H6aNLicoEsNH5yWJm6smOtU&callback=initMap" async defer></script>
+     
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html> 

@@ -15,6 +15,18 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- footer saanam -->
+    <link rel="stylesheet" href="wow/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/76c970a45b.js" crossorigin="anonymous"></script>
+    <link rel="icon" sizes="32x32" href="media/favicons/favicon-32x32.png">
+    <link rel="stylesheet" href="./footer/footer2.css">
+    <link rel="stylesheet" href="./footer/footer.css">
+
+    <!-- footer saanam -->
     <title>Testimonial</title>
     <style>     
     :root {
@@ -66,11 +78,11 @@
             <div class="collapse navbar-collapse" style="z-index: 1;" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./homepage.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./home.html">Home<span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="./projects.html">Projects</a><span class="sr-only"></span></a>
+                        <a class="nav-link" href="./project.html">Projects</a><span class="sr-only"></span></a>
                     </li>
 
 
@@ -101,7 +113,7 @@
         <div class="testimonials">
         <div>
             <center>
-                <h1 class="head">TESTIMONIALS</h1>  
+                <h1 class="head" style="font-size: 4rem;">TESTIMONIALS</h1>  
             </center>
         </div>
         <div class="swiper-container">
@@ -180,7 +192,56 @@
                 
             </div>
         </div>
+
+        <!--FOOTER-->
+    <section id="footer" class="shadow-3 mt-5">
+        <footer class="container text-center text-lg-left">
+            <div class="row">
+                <div class="wow slideInLeft col-lg-7" data-wow-offset="200">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h4 class="h2 font-weight-light">EPOCH ZERO<sup><small>&trade;</small></sup></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="col-lg-6 pl-0 pl-lg-5 border-left mt-5 mt-lg-0" id="contact">
+                            <h5>Contact</h5>
+                            <address>
+                                2193 Hood Avenue <br>
+                                Calfornia <br>
+                                ZIP Code 92064 <br>
+                                Telephone: 858-668-1235
+                            </address>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="" style="text-align: center; font-size: 1rem; font-weight: bold;">Find Us On</div>
+                    <div class="row mt-2 mb-5">
+                        <div class="col-lg-10">
+                            <div class="wow slideInUp rounded-social-buttons">
+                                <a class="social-button facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="social-button twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a class="social-button linkedin" href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a class="social-button instagram" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="social-button github" href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                <a class="social-button phone" href="tel:1234" target="_blank"><i class="fas fa-phone"></i></a>
+                                <a class="social-button envelope" href="mailto:loremepsom@email.com" target="_blank"><i class="far fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow slideInRight col-lg-5" data-wow-offset="200">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </footer>
+        <div class="wow slideInUp text-white text-center mt-5 py-3" id="footer-bottom">
+            <h6>Copyright 2020 <br>All Rights Reserved </h6>
+        </div>
+    </section>
     </div>
+
+    
     
 
 
@@ -216,5 +277,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+
+        <!-- footer saanam -->
+     <!-- Wow js -->
+     <script src="./footer/wow/wow.min.js"></script>
+     <script src="./footer/wow/wow-activate.js"></script>
+     
+     <!-- Google Maps -->
+     <script src="initMap.js"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeRsHl2ya2H6aNLicoEsNH5yWJm6smOtU&callback=initMap" async defer></script>
+     
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <!-- footer saanam -->
 </body>
 </html>

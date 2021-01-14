@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --bgtheme: #1c1c1bff;
+  --bgletter: #fff;
+  --bgmission: lightsalmon;
+  --bgvision: yellow;
+  /* --design1:#de354c; */
+  --design1: #ce4a7eff;
+  --design2: 0xce4a7e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  overflow-x: hidden;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bgtheme);
+  position: relative;
+  color: var(--bgletter);
+}
+
+.navContainer {
+  top: 0;
+  background-color: transparent;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  display: block;
+  transition: all 0.8s ease;
+}
+
+.navigationMenu a {
+  float: left;
+  display: block;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 1rem;
+}
+
+.navbar {
+  margin-top: 0;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+@media screen and (max-height: 300px) {
+  ul {
+    /* margin-top: 40px; */
+  }
+}
+
+.navigationMenu a:hover {
+  background-color: var(--bgtheme);
+  color: var(--design1);
+  transition: all 0.4s;
+}
+.navigationMenu a:active {
+  background-color: var(--bgtheme);
+  color: var(--design1);
+  transition: all 0.4s;
+}
+
+.navbar-toggler-icon {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationMenu .voice{
+  outline:none;
+  border:none;
+  margin:0 auto;
+  border-radius:50%;
+  background-color:var(--design1);
+  float:right;
+  top:15px;
+  position:absolute;
+}
+.voice .fas{
+  color:var(--bgletter);
+}
+
+.navbar-brand {
+  border-right: 3px solid white;
+}
+
+@media (max-width: 575px) {
+  .navbar-brand {
+    border-right: 0px solid white;
+  }
+}
+
+.navbar-toggler-icon i {
+  color: white;
+  margin: 0 auto;
+  font-size: 28px;
+}
+
+.collapse li:hover {
+  /* background-color: var(--bgtheme); */
+  transition: all 0.4s;
+  background-color:var(--bgtheme);
+
+}
+
+.collapse li:hover a {
+  color: var(--design1);
+ 
+}
+
+
+/* sectionOne */
+
+.sectionBegin, .sectionBegin2, .sectionBegin3{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutUs {
+  padding-top: 50px;
+}
+
+.spanAboutHead {
+  margin-bottom: 20px;
+}
+
+.spanAboutHead::before,
+.spanProductHead::before {
+  content: "";
+  position: absolute;
+  background-color: var(--design1);
+  width: 35px;
+  height: 4px;
+  bottom: 0;
+  border-radius: 10%;
+}
+
+.card-body {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card-body .cardCircle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--bgtheme);
+  top: -10vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--bgletter);
+}
+
+.cardCircle i {
+  font-size: 50px;
+}
+
+.card {
+  background-color: var(--bgtheme);
+  border: none;
+}
+
+.card:hover .cardCircle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--design1);
+  top: -10vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--bgletter);
+}
+
+button:focus {
+  outline: none;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  top:0;
+  left: 0%;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+  width:100%;
+  height:0;
+  display: none;
+  transition: all 0.8s ease;
+  visibility: hidden;
+}
+
+.sectionFour .card {
+
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  margin: 0 auto;
+
+
+}
+
+.cardContainer {
+  perspective: 1000px;
+}
+
+
+.card:hover .overlay {
+  display: block;
+  height:100%;
+  left: 0;
+  visibility: visible;
+
+}
+
+.sectionFour h4 {
+  color: var(--design1);
+  font-weight: 700;
+  background:var(--bgtheme);
+  padding:2px;
+  border:3px solid var(--bgletter);
+  border-radius:15px;
+}
+
+.swiper-container {
+  width: 100vh;
+  height: 70vh;
+  position: absolute;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+#swiperHidden {
+  display: none;
+}
+
+#sectionOnerow1 {
+  position: relative;
+  background: var(--design1);
+  height: 80vh;
+  width: 100%;
+  color: white;
+}
+
+.swiper-slide .detailshead {
+  font-size: 40px;
+
+  font-weight: 700;
+}
+
+.swiper-slide .detailsbody {
+  font-size: 18px;
+  text-align: center;
+}
+
+.sectionSix {
+  padding-top: 60px;
+margin-bottom:100px;
+  width: 100vw;
+}
+
+.sectionSixCircle {
+  position: relative;
+
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 2px solid var(--design1);
+}
+
+.sectionSixCircle:hover {
+  border: 2px solid var(--bgletter);
+  background-color: var(--design1);
+}
+
+.sectionSixCircle a {
+  text-decoration: none;
+  position: absolute;
+  font-size: 40px;
+  color: var(--design1);
+}
+
+.sectionSixCircle:hover a {
+  color: var(--bgletter);
+}
+
+#sectionIntermediateOne,
+.sectionIntermediateOne {
+  height: 50vh;
+}
+
+@media only screen and (min-width:769px) {
+  p {
+    font-size: 17px;
+  }
+ .sectionIntermediateCounter h4 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+
+  }
+
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+
+  .cardContainer p {
+
+    top: 50%;
+
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .swiper-container {
+    width: 80vh;
+    height: 70vh;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .swiper-container {
+    width: 400px;
+    height: 400px;
+  }
+
+
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .swiper-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .swiper-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0px;
+} */
+
+/* h1, h3  {
+  text-transform: uppercase;
+ } */
+
+.counter {
+  text-align: center;
+}
+
+.counter h4 {
+  text-align: center;
+}
+
+.counter-count,
+.counterPlus {
+  margin-top: 1rem;
+  font-size: 50px;
+  font-weight: bold;
+  position: relative;
+  color: var(--design1);
+  text-align: center;
+  display: inline-block;
+}
+
+.CounterBox {
+  border-radius: 3px;
+  background: #1c1c1b;
+  box-shadow: inset 5px 5px 10px #111110, inset -5px -5px 10px #272726;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.sectionBeginCircle {
+  border-radius: 50%;
+  background: var(--design1);
+  box-shadow: inset 5px 5px 10px #7e2d4d, inset -5px -5px 10px #ff67af;
+  height: 20vh;
+  width: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
